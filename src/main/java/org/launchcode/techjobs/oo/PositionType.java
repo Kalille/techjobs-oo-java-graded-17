@@ -22,19 +22,18 @@ public class PositionType {
 
     @Override
     public String toString() {
-        return "PositionType{" +
-                ", value='" + value + '\'' +
-                '}';
+        return value  ;
     }
 
     // TODO: Add custom equals and hashCode methods. Consider two PositionType objects "equal" when
     //  their id fields match.
 
+
     @Override
     public boolean equals(Object o) {
         if (this == o) return true;
         if (!(o instanceof PositionType that)) return false;
-        return getId() == that.getId() && Objects.equals(getValue(), that.getValue());
+        return getId() == that.getId();
     }
 
     @Override
